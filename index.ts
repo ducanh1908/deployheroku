@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import { bookRouters } from "./src/router/book.router";
 import fileUpload from "express-fileupload"
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 app.set('views', './src/views');
