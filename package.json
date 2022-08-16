@@ -4,10 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf dist && tsc -p tsconfig.build.json",
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+   
     "start:dev": "tsc-watch -p tsconfig.build.json --onSuccess \"node dist/index.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+   
+    "build:prod": "rimraf dist && tsc -p tsconfig.build.json",
+   
+    "start": "node dist/index.js"
+   
+    },
+   
   "author": "",
   "license": "ISC",
   "dependencies": {
